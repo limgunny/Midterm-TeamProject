@@ -73,9 +73,17 @@ li {
 /* main */
 
 #main {
-  margin-left: 250px;
+  margin-left: 240px;
 }
 
+#main .logo{
+margin-top: 0px;
+margin-left: 10%;
+width: 60%;
+height: 200px;
+position: fixed;
+
+}
 #main .hero-header {
   text-align: center;
   background-image: url("img/fruit2.png");
