@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>wonderfruit</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+</head>
+<body>
+  <div id="side-navbar">
+   <img class="fire" src="/img/wonderfruit.gif"> <h2>wonderfruit </h2><br><br><br><br><br>
+      <li><a href="/">홈으로</a></li>
+      <li><a href="shopping.html">장바구니</a></li>
+      <li><a href="mypage.html">마이페이지</a></li>
+      <li><a href="category.html">카테고리</a></li>
+      <li><a href="mypage.html">마이페이지</a></li>
+      <li><a href="introduce.html">팀 소개</a></li>
+      <li><a href="loading.html">.</a></li>
+    </ul>
+
+    
+    
+    <div class="sns-icon">
+      <div class="sns">
+        <a href="https://github.com/limgunny/team">
+        <img class="github-img" src="img/github.png">
+        </a>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div id="main">
+    <!-- <img class="logo" src="img/image03.png"/> -->
+    <div class="hero-header">
+      <div class="info">
+        
+        <p>
+        <button onmouseover="showbanana()" onmouseout="hide()">바나나</button>
+        <button onmouseover="showapple()" onmouseout="hide()"> 사과</button>
+        <button onmouseover="showpear()" onmouseout="hide()">배</button>
+        <button onmouseover="showgrape()" onmouseout="hide()"> 포도</button>
+        <button onmouseover="showstrawberry()" onmouseout="hide()">딸기</button>
+        <button onmouseover="showwatermelon()" onmouseout="hide()"> 수박</button>
+        <button onmouseover="showmango()" onmouseout="hide()">망고</button>
+        <button onmouseover="showkiwi()" onmouseout="hide()"> 키위</button>
+        <button onmouseover="showpeach()" onmouseout="hide()">자두</button>
+        <button onmouseover="showplum()" onmouseout="hide()"> 복숭아</button>
+        </p>
+
+        <div>
+            <img id="fig" height="200px" />
+            <p id="desc"></p><br>
+            
+        </div>
+        <fieldset>
+            <legend>상품선택</legend>
+            <p><b>주문할 상품을 선택해 주세요.</b></p>
+            <label><input type="checkbox" value="s_3" />바나나</label>
+            <label><input type="checkbox" value="s_5" />사과</label>
+            <label><input type="checkbox" value="s_3" />배</label>
+            <label><input type="checkbox" value="s_5" />포도</label>
+            <label><input type="checkbox" value="s_3" />딸기</label>
+            <label><input type="checkbox" value="s_5" />수박</label>
+            <label><input type="checkbox" value="s_3" />망고</label>
+            <label><input type="checkbox" value="s_5" />키위</label>
+            <label><input type="checkbox" value="s_3" />자두</label>
+            <label><input type="checkbox" value="s_5" />배</label>
+            <p><b>포장 선택</b></p>
+            <label><input type="radio" name="gift" value="yes" />선물 포장</label>
+            <label
+              ><input type="radio" name="gift" value="no" />선물 포장 안 함</label
+            >
+          </fieldset>
+          <input type="submit" value="구입" />
+          <input type="reset" value="장바구니에 추가" />
+      
+      </div>
+    </div>
+  </div>
+   <script src="main.js"></script>
+</body>
+</html>

@@ -5,7 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
-    <title>Document</title>
+    <title>wonderfruit</title>
+    <style>
+    .grid-container {
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap:10px;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+    .grid-item > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    
+    
+    .item1 {
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    </style>
 </head>
 <body>
     <div id="side-navbar">
@@ -35,9 +61,23 @@
        <div id="main">
         <div class="hero-header">
           <div class="info">
-          
+            <h1>마이페이지</h1>
+  
+            <div class="grid-container">
+              <div class="item1"><img src="img/basket.jpg" alt="photo" width="200px" />  </div>
+              <div class="item2">주문조회</div>
+              <div class="item3">관심상품</div>  
+              <div class="item4">공지사항</div>
+              <div class="item5">1:1문의</div>
+              <div class="item6">이용후기</div>
+              <div class="item7">이벤트</div>
+              <div class="item8">수입 일정표</div>  
+            </div>
+            
           </div>
+          
         </div>
+        
       </div>
     </body>
     </html>
