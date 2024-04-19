@@ -26,7 +26,7 @@ function showgrape(){
 function showstrawberry(){
     document.getElementById('fig').src ='img/strawberry.png'
     document.getElementById('desc').innerHTML=
-    '<span style=\"background: yellow; font-size: 30px; color: red;\"><b>4990원</span></span></b><br>진한 달콤함과 아삭하고 산뜻한 식감이예요<br> 한입에 쏙 들어가는 크기의 당도높은 딸기예요'
+    '<span style=\"background: yellow; font-size: 30px; color: red;\"><b>4990원</span></span></b><br>진한 달콤함과 아삭하고 산뜻한 식감이예요<br> 한입에 쏙 들어가는 크기의 당도높은 딸기예요<br>맛과 품질, 신선한 바나나를 원더프룻이 제안하는 합리적인 가격으로 만나보세요!'
 }
 
 function showwatermelon(){
