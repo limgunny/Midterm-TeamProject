@@ -48,24 +48,36 @@
      <div class="hero-header">
        <div class="info">
          
-        <h1>카테고리</h1>
+       
     
-    <p>We have<em>수입</em> 과일과 <em>제철</em> 과<em>국산</em>.</p>
-    
-    <p>합리적으로 맛보는 과일~! 신선하고 맛도 좋아요~!</p>
     
     <div class="grid-container">
-      <div class="grid-item">바나나<br><img src="img/banana1.png" alt="photo" width="100px" /></div>
-      <div class="grid-item">사과<br><img src="img/apple3.png" alt="photo" width="100px" /> </div>
-      <div class="grid-item">배<br><img src="img/pear.png" alt="photo" width="100px" /> </div>  
-      <div class="grid-item">포도<br><img src="img/grape.png" alt="photo" width="100px" /> </div>
-      <div class="grid-item">딸기<br><img src="img/strawberry.png" alt="photo" width="100px" /> </div>
-      <div class="grid-item">수박<br><img src="img/watermelon.png" alt="photo" width="100px" /> </div>  
-      <div class="grid-item">망고<br><img src="img/mango.png" alt="photo" width="100px" /> </div>
-      <div class="grid-item">키위<br><img src="img/kiwi.png" alt="photo" width="100px" /> </div>
-      <div class="grid-item">자두<br><img src="img/plum.png" alt="photo" width="100px" /> </div>  
+      <p>
+      <button type="button" class="grid-item" onmouseenter="showinfob()" onmouseout="hide()">바나나<br><img src="img/banana1.png" alt="photo" width="110px" height="70px"; /></button>
+      <button type="button" class="grid-item" onmouseenter="showinfoa()" onmouseout="hide()">사과<br><img src="img/apple3.png" alt="photo" width="110px" height="70px" /></button>
+      <button type="button" class="grid-item" onmouseenter="showinfop()" onmouseout="hide()">배<br><img src="img/pear.png" alt="photo" width="110px" height="70px" /></button>
+      <button type="button" class="grid-item" onmouseenter="showinfog()" onmouseout="hide()">포도<br><img src="img/grape.png" alt="photo" width="110px" height="70px" /></button>
+      <button type="button" class="grid-item" onmouseenter="showinfos()" onmouseout="hide()">딸기<br><img src="img/strawberry.png" alt="photo" width="110px" height="70px" /></button>
+      <button type="button" class="grid-item" onmouseenter="showinfow()" onmouseout="hide()">수박<br><img src="img/watermelon.png" alt="photo" width="110px" height="70px" /></button>
+      <button type="button" class="grid-item" onmouseenter="showinfom()" onmouseout="hide()">망고<br><img src="img/mango.png" alt="photo" width="110px" height="70px" /></button>
+      <button type="button" class="grid-item" onmouseenter="showinfok()" onmouseout="hide()">키위<br><img src="img/kiwi.png" alt="photo" width="110px" height="70px" /></button>
+      <!-- <button type="button" class="grid-item" onclick="showinfoj()" onmouseout="hide()">자두<br><img src="img/plum.png" alt="photo" width="100px" /></button> -->
+      <!-- <button type="button" class="grid-item">바나나<br><img src="img/banana1.png" alt="photo" width="100px" /></button>
+      <button type="button" class="grid-item">사과<br><img src="img/apple3.png" alt="photo" width="100px" /> </button>
+      <button type="button" class="grid-item">배<br><img src="img/pear.png" alt="photo" width="100px" /> </button>  
+      <button type="button" class="grid-item">포도<br><img src="img/grape.png" alt="photo" width="100px" /> </button>
+      <button type="button" class="grid-item">딸기<br><img src="img/strawberry.png" alt="photo" width="100px" /> </button>
+      <button type="button" class="grid-item">수박<br><img src="img/watermelon.png" alt="photo" width="100px" /> </button>  
+      <button type="button" class="grid-item">망고<br><img src="img/mango.png" alt="photo" width="100px" /> </button>
+      <button type="button" class="grid-item">키위<br><img src="img/kiwi.png" alt="photo" width="100px" /> </button>
+      <button type="button" class="grid-item">자두<br><img src="img/plum.png" alt="photo" width="100px" /> </button>   -->
+   </p>
     </div>
-    
+    <div>
+      <img id="infoimg" height="200px" />
+      <p id="info"></p><br>
+      
+  </div>
          
        </div>
      </div>
@@ -79,5 +91,6 @@
   이용시간 : 9:00 ~ 18:00
       </footer>
    </div>
+   <script src="main.js"></script>
  </body>
  </html>
