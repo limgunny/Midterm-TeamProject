@@ -6,7 +6,27 @@
     <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
     <title>wonderfruit</title>
-   
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        background-color: darkgray;
+        padding: 10px;
+      }
+      
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 50px 50px;
+        font-size: 30px;
+      }
+      
+      .item1 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      </style>
 </head>
 <body>
   <div id="side-navbar">
@@ -37,10 +57,30 @@
      <div class="hero-header">
        <div class="info">
          
-       
+        <h1>마이페이지</h1>
+  
+        <div class="grid-container">
+          <div class="item1"><img src="img/basket.jpg" alt="photo" width="200px" />  </div>
+          <div class="item2">주문조회</div>
+          <div class="item3">관심상품</div>  
+          <div class="item4">공지사항</div>
+          <div class="item5">1:1문의</div>
+          <div class="item6">이용후기</div>
+          <div class="item7">이벤트</div>
+          <div class="item8">수입 일정표</div>  
+        </div>
       
        </div>
      </div>
+     <footer  style=" margin:-10px;  text-align:left;padding-left:5%; background-color: darkgray;">
+      상호명 : wonderfruit<br>
+      대표자명 : 박이슬,유선빈,임건희<br>
+      주소 : 경기도 고양시 덕양구 동헌로 305 (833호)<br>
+      통신판매업 신고 번호 : 123124-12341-1234<br>
+  사업자 등록 번호 : 1234-1243-1234<br>
+  고객센터 전화 : 02-123-4567<br>
+  이용시간 : 9:00 ~ 18:00
+      </footer>
    </div>
  </body>
  </html>
