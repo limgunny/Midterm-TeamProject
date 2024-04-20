@@ -6,6 +6,23 @@
     <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
     <title>wonderfruit</title>
+    <style>
+      input[type="text"] {
+          width: 300px;
+          padding: 10px;
+          font-size: 16px;
+      }
+      button {
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+      }
+
+      
+  </style>
 </head>
 <body>
   <div id="side-navbar">
@@ -32,14 +49,40 @@
  
  
    <div id="main">
-     <!-- <img class="logo" src="img/image03.png"/> -->
      <div class="hero-header">
        <div class="info">
          
-       
+        <input type="text" id="searchInput" placeholder="'팀'을 검색해 보세요">
+    <button onclick="performSearch()">검색</button>
+    <div style="color:darkgreen; font: bold  2.0em/1.0em 돋움체;" id="searchResults"></div>
+
          
        </div>
      </div>
    </div>
+   <script>
+    const data = 
+    ["팀소개","팀원1-박이슬(92450524)","팀원2-유선빈(921000000)","팀원3-임건희(91814333)"];
+        // 추가 검색 가능한 데이터 항목들...
+    
+
+    function performSearch() {
+        const userInput = document.getElementById('searchInput').value.toLowerCase();
+        const searchResults = data.filter(item => item.toLowerCase().includes(userInput));
+
+        const resultsContainer = document.getElementById('searchResults');
+        resultsContainer.innerHTML = ''; // 기존 결과 초기화
+
+        if (searchResults.length === 0) {
+            resultsContainer.textContent = '검색 결과가 없습니다.';
+        } else {
+            searchResults.forEach(result => {
+                const resultItem = document.createElement('p');
+                resultItem.textContent = result;
+                resultsContainer.appendChild(resultItem);
+            });
+        }
+    }
+</script>
  </body>
  </html>
