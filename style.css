@@ -133,8 +133,8 @@ position: fixed;
   }
   
   button:hover {
-    color: red;
-    background-color: yellow;
+    color: lightgray;
+    background-color: grey;
   }
 
 /* 판매상품 끝 */
